@@ -1,4 +1,4 @@
-name: "Add comment if all assignees have commented"
+name: "Agregue un comentario si todos los asignados han comentado"
 on:
   issue_comment:
     types:
@@ -11,9 +11,9 @@ jobs:
   - name: Checkout repo
     uses: actions/checkout@v2 
 
-  - name: Notify if all assignees have commented 
-    uses: mvkaran/comment-on-issue@v1.0
+  - name: Notificar si todos los asignados han comentado
+    uses: javiteran/comment-on-issue@v1.0
     env: 
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      LABEL: 'weekly—update'
-      COMMENT: 'Looks I ike everyone has shared their inputs for the weekly update!'
+      LABEL: 'Actualización semanal'
+      COMMENT: '¡parece que todos han compartido sus aportaciones para la actualización semanal!'
