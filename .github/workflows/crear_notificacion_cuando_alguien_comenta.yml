@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v2 
 
     - name: Notificar si todos los asignados han comentado
-      uses: IESAlisal/comment-on-issue@v1.0
+      uses: IESAlisal/DevOpsK8s_GitHub_Actions@v1.0
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         LABEL: 'Actualización semanal'
