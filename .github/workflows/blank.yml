@@ -26,11 +26,11 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Ejecutar un script de una linea
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Ejecutar un script de multiples lineas
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.

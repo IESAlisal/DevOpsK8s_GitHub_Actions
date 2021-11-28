@@ -5,15 +5,15 @@ on:
       - created
 jobs:
   primary:
-  if: ${{ !github.event.issue.pull_request }}
-  runs-on: ubuntu—latest
-  steps:
-  - name: Checkout repo
-    uses: actions/checkout@v2 
+    if: ${{ !github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2 
 
-  - name: Notificar si todos los asignados han comentado
-    uses: javiteran/comment-on-issue@v1.0
-    env: 
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      LABEL: 'Actualización semanal'
-      COMMENT: '¡parece que todos han compartido sus aportaciones para la actualización semanal!'
+    - name: Notificar si todos los asignados han comentado
+      uses: javiteran/comment-on-issue@v1.0
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        LABEL: 'Actualización semanal'
+        COMMENT: '¡parece que todos han compartido sus aportaciones para la actualización semanal!'
