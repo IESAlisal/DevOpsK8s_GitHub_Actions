@@ -16,5 +16,6 @@ jobs:
       uses: mvkaran/comment-on-issue@v1.0
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Esta etiqueta es obligatoria para que la accion funcione!!!!!!!!!!!!
         LABEL: 'Actualización semanal'
-        COMMENT: '¡parece que todos han compartido sus aportaciones para la actualización semanal!'
+        COMMENT: 'Parece que todos han compartido sus aportaciones para la actualización semanal. ¡Genial!'
